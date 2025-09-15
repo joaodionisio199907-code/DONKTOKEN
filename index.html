@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donk Token — Official Site</title>
+  <meta name="description" content="Donk Token — token backed by pro CS2 player Donk. Sponsored by DexScreener and Pump.fun." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" class="loader">
+    <div class="spinner"></div>
+    <div class="loader-text">AWP LOADING...</div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/hero.jpg" alt="Donk" class="brand-thumb" />
+        <div>
+          <h1>DONK</h1>
+          <p class="subtitle">Professional CS2 Player — Donk Token (DONK)</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#token">Token</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#boxes">Boxes</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2>Dominate Every Match</h2>
+        <h3>Built by Donk — backed by the community</h3>
+        <p class="lead">Launching on <strong>Pump.fun</strong>. Sponsored by <strong>DexScreener</strong> &amp; <strong>Pump.fun</strong>.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#token">Token Details</a>
+          <a class="btn ghost" href="#boxes">Open Boxes (Coming Soon)</a>
+        </div>
+        <div class="token-panel">
+          <div><strong>Token:</strong> DONK</div>
+          <div><strong>Platform:</strong> Pump.fun</div>
+          <div><strong>Fees donated:</strong> 100%</div>
+          <div><strong>Price:</strong> — (TBA)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Donk</h2>
+        <div class="about-grid">
+          <div class="about-media">
+            <img src="assets/hero.jpg" alt="Donk portrait" />
+          </div>
+          <div class="about-text">
+            <h3>Professional Counter-Strike 2 Player</h3>
+            <p>Donk is a professional CS2 player known for aggressive rifling, game sense and clutch plays. With years of experience competing in high-level matches and streaming to a growing community, Donk launches DONK token to connect fans and reward supporters.</p>
+            <h4>CS2 Highlights</h4>
+            <ul>
+              <li>Team leader for multiple regional tournaments</li>
+              <li>Known for iconic knife and clutch moments</li>
+              <li>Streamer with dedicated donor-driven leaderboards</li>
+            </ul>
+            <p>Donk's mission: reward the community, return token fees to donors, and give exclusive in-game style drops and collectible knives to supporters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Token -->
+    <section id="token" class="section token">
+      <div class="container">
+        <h2>DONK Token - Overview</h2>
+        <div class="token-grid">
+          <div class="token-card">
+            <h3>Key Information</h3>
+            <table class="info-table">
+              <tr><td>Symbol</td><td>DONK</td></tr>
+              <tr><td>Launch Platform</td><td>Pump.fun</td></tr>
+              <tr><td>Fee Donation</td><td>100% to community prizes & donors</td></tr>
+              <tr><td>Sponsorship</td><td>DexScreener & Pump.fun</td></tr>
+              <tr><td>Total Supply</td><td>TBA</td></tr>
+            </table>
+          </div>
+          <div class="token-card">
+            <h3>How it works</h3>
+            <ol>
+              <li>Buy DONK on Pump.fun at launch.</li>
+              <li>All fees generated are collected and used for community rewards.</li>
+              <li>Token holders qualify for giveaways and box openings.</li>
+            </ol>
+            <a class="btn" href="#" onclick="alert('Replace with real Pump.fun link')">View on Pump.fun</a>
+            <a class="btn ghost" href="#" onclick="alert('Replace with DexScreener link')">View on DexScreener</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section roadmap">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <ul class="roadmap-list">
+          <li><strong>Phase 1</strong> — Token audit, community launch, Pancake listing on Pump.fun</li>
+          <li><strong>Phase 2</strong> — Launch of the Boxes system (5000€ knives drop x20), community events</li>
+          <li><strong>Phase 3</strong> — Integrations, tournament sponsorships, donor leaderboards</li>
+          <li><strong>Phase 4</strong> — NFTs and marketplace for exclusive Donk items</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section id="boxes" class="section boxes">
+      <div class="container">
+        <h2>Boxes — Coming Soon</h2>
+        <p>Exclusive boxes will be available to token holders. There will be 20 ultra-rare knives valued at €5,000 each as part of early supporter rewards.</p>
+        <div class="boxes-grid">
+          <div class="box-card">
+            <h3>Starter Box</h3>
+            <p>Standard cosmetic drops and donor tokens.</p>
+            <button class="btn" onclick="openBox('starter')">Open Box (Demo)</button>
+          </div>
+          <div class="box-card premium">
+            <h3>Premium Box</h3>
+            <p>Higher chance of rare items and exclusive Donk skins.</p>
+            <button class="btn" onclick="openBox('premium')">Open Box (Demo)</button>
+          </div>
+        </div>
+
+        <div id="resultModal" class="modal" aria-hidden="true">
+          <div class="modal-content">
+            <h3>Box Result</h3>
+            <div id="modalBody">—</div>
+            <button class="btn" onclick="closeModal()">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DexScreener Widget -->
+    <section id="charts" class="section charts">
+      <div class="container">
+        <h2>Live Charts & Listings (DexScreener)</h2>
+        <p>Live price charts and token listings (placeholder). Replace the iframe src with the official DexScreener widget URL for DONK when available.</p>
+        <div class="chart-wrap">
+          <iframe src="about:blank" id="dexIframe" title="DexScreener Chart" sandbox="allow-scripts allow-same-origin" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Partners -->
+    <section id="partners" class="section partners">
+      <div class="container">
+        <h2>Partners & Sponsors</h2>
+        <div class="partners-grid">
+          <div class="partner">
+            <img src="assets/dexscreener.jpg" alt="DexScreener Logo" />
+            <p>DexScreener — charts & live listings integration (sponsored)</p>
+          </div>
+          <div class="partner">
+            <img src="assets/pumpfun.png" alt="Pump.fun Logo" />
+            <p>Pump.fun — launch platform and token marketplace (sponsored)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Socials -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact & Socials</h2>
+        <p>Follow Donk and connect on official channels. Replace the placeholders below with your real links.</p>
+        <div class="socials">
+          <a class="social" href="https://www.twitch.tv/donk1437" target="_blank">Twitch</a>
+          <a class="social" href="https://www.youtube.com/@donk.channel" target="_blank">YouTube</a>
+          <a class="social" href="https://x.com/donk1337" target="_blank">X / Twitter</a>
+          <a class="social" href="https://www.instagram.com/donk1221" target="_blank">Instagram</a>
+          
+        </div>
+        <p class="legal">Legal &amp; Disclaimer: Donk Token is a community token. Not financial advice. Always DYOR.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© sandbox — Donk Token. All rights reserved.</p>
+      <p>Coming Soon: Box openings & giveaways — stay tuned.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
